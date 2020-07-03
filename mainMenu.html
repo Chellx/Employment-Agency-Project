@@ -1,0 +1,188 @@
+<!---
+Main Menu
+Purpose: Homepage Of The Website
+Description: This code is the Home page of the website
+Author: Michelle Bolger
+Date: March 2020
+---><!DOCTYPE html>
+<html>
+	<head>
+	<DIV ALIGN=CENTER>
+	<A HREF="mainMenu.html"><IMG SRC="logo.png"></a>
+	
+		<meta charset="UTF-8">
+		<title>CDDM Employment Agency</title>
+		<style> 
+
+		ul {   /*NAV BAR*/
+		  display: inline-block;    /* inline element you can apply height and width values*/
+		  list-style-type: none;    /*No bullet points*/
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: white;
+		  text-align:center;
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		
+		li {
+			float: left;
+		}
+		
+		li a, .dropbtn {
+		  display: block;
+		  color: rgb(65,105,225); /* NAV BAR OPTIONS royal blue*/
+		  font-style:bold;
+		  font-size:20px;
+		  text-align: center;
+		  padding: 20px 60px;
+		  text-decoration: none;
+		  display: inline-block;
+		}
+	
+
+
+		li a:hover, .dropdown:hover .dropbtn { /*dropdown hover options*/
+			background-color: rgb(65,105,225); /*royal blue*/
+			color:white;  /*text*/
+			}
+
+		li.dropdown {
+		  display: inline-block;
+		}
+		
+		.dropdown-content {
+				  display: none;
+				  position: absolute;
+				  background-color: #f9f9f9; /*background of dropdown menu - white*/
+				  min-width: 160px;
+				  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+				  z-index: 1;
+							}
+
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none; /*options such as underline */
+		  display: block;
+		  text-align: left;
+		}
+
+		.dropdown-content a:hover {
+		background-color: rgb(65,105,225); /*royal blue*/
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;   /*dropdown content text before cursor hovers*/
+		}
+		
+		li a:hover:not(.active){ /*dropdown option not active*/
+		background-color: #314891;  /*DARK BLUE*/
+		  color:white;   /*dropdown content text when cursor hovers over*/
+		 
+		}
+		
+		li a.active { /*dropdowncontent options that are active*/
+		background-color: rgb(65,105,225); /*royal blue*/
+		  color:white;
+		}
+		
+		.footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: rgb(65,105,225); /*royal blue*/
+			color: white; /*text*/
+			text-align: center;
+		}
+
+
+	
+	
+
+	</style>
+	
+	</head>
+	
+	
+	<body>
+
+
+	
+	<div>
+			<ul>
+			
+			   <li class="dropdown">
+					<a href="#" class="dropbtn">Company</a>
+					<div class="dropdown-content">
+					  <a href="#">Add A New Company</a>
+					  <a href="#">Delete A Company</a>
+					  <a href="#">Amend / View A Company</a>
+					</div>
+				  </li>
+				  
+			 
+			 <li class="dropdown">
+					<a href="#" class="dropbtn">Client</a>
+					<div class="dropdown-content">
+					  <a href="#">Add A New Client</a>
+					  <a href="#">Delete A Client</a>
+					  <a href="#">Amend / View A Client</a>
+					</div>
+				  </li>
+				  
+				  	 <li class="dropdown">
+					<a href="#" class="dropbtn">Training</a>
+					<div class="dropdown-content">
+					  <a href="#">Enrol On A Course</a>
+					  <a href="#">Cancel An Enrolment</a>
+					  <a href="#">Add A New Training Course</a>
+					  <a href="#">Delete A Training Course</a>
+					  <a href="#">Amend / View A Training Course</a>
+					</div>
+				  </li>
+				  
+				  
+				  	 <li class="dropdown">
+					<a href="addjobform.php" class="dropbtn">Job</a>
+					<div class="dropdown-content">
+					  <a href="addjobform.php">Add A New Job</a>
+					  <a href="#">Delete A Job</a>
+					  <a href="vieweditjob.php">Amend / View A Job</a>
+					  <a href="#">Fill A Job</a>
+					</div>
+				  </li>
+				  
+				    	 <li class="dropdown">
+					<a href="#" class="dropbtn">Reports</a>
+					<div class="dropdown-content">
+					  <a href="#">Companies & Job Vacancies Report</a>
+					  <a href="#">Training Courses Report</a>
+					  <a href="#">Job Vacancies Report</a>
+					   <a href="#">Training Course Enrollent Report</a>
+					    <a href="mainMenu.html">Quit</a>
+					</div>
+				  </li>
+			 
+			 
+		
+			  <li><a href="https://www.google.com/">Quit</a></li>
+			</ul>
+			
+	
+
+	
+	</div>	
+
+	<img src="mainimg.jpg" alt="Image Of Programmers Working" width="1050" height="590">
+	
+	
+	
+	<div class="footer">
+  <p>CDDM EMPLOYMENT AGENCY 2020</p>
+</div>
+
+	</body>
+</html>	
